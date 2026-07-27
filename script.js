@@ -37,6 +37,79 @@
   });
 })();
 
+(function () {
+  var selectSampleButton = document.getElementById("selectSampleButton");
+  var sampleContent = document.getElementById("sampleContent");
+  var pasteBox = document.getElementById("pasteBox");
+  var pasteStatusMessage = document.getElementById("pasteStatusMessage");
+
+  if (
+    !selectSampleButton ||
+    !sampleContent ||
+    !pasteBox ||
+    !pasteStatusMessage
+  ) {
+    return;
+  }
+
+  function setStatus(type, message) {
+    pasteStatusMessage.dataset.state = type;
+    pasteStatusMessage.textContent = message;
+  }
+
+  function clearStatus() {
+    pasteStatusMessage.removeAttribute("data-state");
+    pasteStatusMessage.textContent = "";
+  }
+
+  function selectSampleText() {
+    var selection = window.getSelection();
+    var range = document.createRange();
+
+    range.selectNodeContents(sampleContent);
+    selection.removeAllRanges();
+    selection.addRange(range);
+
+    setStatus(
+      "success",
+      "Sample selected. Press Cmd+C (or Ctrl+C), then paste into the result box.",
+    );
+  }
+
+  function evaluatePaste() {
+    var value = pasteBox.value.trim();
+
+    if (!value) {
+      clearStatus();
+      return;
+    }
+
+    if (!value.includes("Source:")) {
+      setStatus(
+        "error",
+        "No Source line detected yet. Copy the sample text again from this page and paste once more.",
+      );
+      return;
+    }
+
+    if (value.includes(window.location.href)) {
+      setStatus(
+        "success",
+        "Success: Source contains this route URL. Dynamic backlink injection is working.",
+      );
+      return;
+    }
+
+    setStatus(
+      "success",
+      "Source line detected. It should reference the page where the text was copied.",
+    );
+  }
+
+  selectSampleButton.addEventListener("click", selectSampleText);
+  pasteBox.addEventListener("input", evaluatePaste);
+})();
+
 // (function () {
 //   var whitelistedHost = "backlink-software-test.onrender.com";
 //   var canonicalHost = function (host) {

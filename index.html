@@ -3,12 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>backlink.software test | Home</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <p>copy paste this text at root directory to test backlink functionality</p>
-    <p><a href="/test">Go to /test</a></p>
+    <main class="shell">
+      <section class="app" aria-label="backlink.software test app">
+        <header class="hero">
+          <p class="eyebrow">Backlink injector</p>
+          <h1>backlink.software test</h1>
+          <p class="subhead">
+            Home route for validating backlink injection. Copy sample text here,
+            paste into the box, and confirm that the snippet appends the source
+            URL dynamically.
+          </p>
+        </header>
 
-    <script src="/script.js"></script>
+        <section class="card" aria-labelledby="page-title">
+          <div class="card-inner">
+            <div class="route-nav" aria-label="Test routes">
+              <a class="route-link is-active" href="./">Home route</a>
+              <a class="route-link" href="./test/">Test route</a>
+            </div>
+
+            <h2 class="section-title" id="page-title">Route: /</h2>
+
+            <ol class="test-steps">
+              <li>Click Select sample text.</li>
+              <li>Copy with Cmd+C (or Ctrl+C).</li>
+              <li>Paste below and verify Source includes this page URL.</li>
+            </ol>
+
+            <div class="button-row">
+              <button id="selectSampleButton" class="secondary" type="button">
+                Select sample text
+              </button>
+            </div>
+
+            <div class="sample-box">
+              <p class="sample-content" id="sampleContent">
+                Home route sample: this text should gain a Source backlink that
+                points to the current page after copy.
+              </p>
+            </div>
+
+            <section class="example-box" aria-label="Expected output example">
+              <p class="example-title">Expected pasted output format</p>
+              <p class="example-output">
+                Home route sample: this text should gain a Source backlink that
+                points to the current page after copy. Source:
+                https://backlink-software-test.onrender.com/
+              </p>
+            </section>
+
+            <label class="field-label" for="pasteBox">Paste result</label>
+            <textarea
+              id="pasteBox"
+              placeholder="Paste copied content here to confirm backlink injection."
+            ></textarea>
+            <div
+              id="pasteStatusMessage"
+              class="status"
+              role="status"
+              aria-live="polite"
+            ></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
