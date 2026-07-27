@@ -233,7 +233,7 @@ button:hover {
   font-family: "SFMono-Regular", "SF Mono", Consolas, monospace;
   font-size: 0.9rem;
   line-height: 1.5;
-  white-space: pre-wrap;
+  white-space: normal;
   word-break: break-word;
 }
 

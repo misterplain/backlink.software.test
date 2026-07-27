@@ -21,11 +21,12 @@
       try {
         var _0xa = window.getSelection().getRangeAt(0);
         var _0xb = _0xa.cloneContents();
-        var _0xc = " Source: " + document.location.href;
+        var _0xc = "\n\nSource: " + document.location.href;
+        var _0x11 = "<br><br>Source: " + document.location.href;
         var _0xd = document.createElement(atob("ZGl2"));
         _0xd.appendChild(_0xb);
         var _0xe = _0xd.innerText + _0xc;
-        var _0xf = _0xd.innerHTML + "" + _0xc + "";
+        var _0xf = _0xd.innerHTML + _0x11;
         _0x8.clipboardData.setData(atob("dGV4dC9wbGFpbg=="), _0xe);
         _0x8.clipboardData.setData(atob("dGV4dC9odG1s"), _0xf);
         _0x8.preventDefault();
@@ -135,11 +136,12 @@
 //       try {
 //         var selectedRange = window.getSelection().getRangeAt(0);
 //         var clonedContents = selectedRange.cloneContents();
-//         var sourceLink = " Source: " + document.location.href;
+//         var plainSourceLine = "\n\nSource: " + document.location.href;
+//         var htmlSourceLine = "<br><br>Source: " + document.location.href;
 //         var temporaryDiv = document.createElement("div");
 //         temporaryDiv.appendChild(clonedContents);
-//         var plainTextData = temporaryDiv.innerText + sourceLink;
-//         var htmlData = temporaryDiv.innerHTML + "" + sourceLink + "";
+//         var plainTextData = temporaryDiv.innerText + plainSourceLine;
+//         var htmlData = temporaryDiv.innerHTML + htmlSourceLine;
 //         event.clipboardData.setData("text/plain", plainTextData);
 //         event.clipboardData.setData("text/html", htmlData);
 //         event.preventDefault();
