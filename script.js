@@ -25,7 +25,12 @@
         var _0x11 = "<br><br>Source: " + document.location.href;
         var _0xd = document.createElement(atob("ZGl2"));
         _0xd.appendChild(_0xb);
-        var _0xe = _0xd.innerText + _0xc;
+        var _0xe = _0xd.innerText
+          .replace(/\u00a0/g, " ")
+          .replace(/\s*\n\s*/g, " ")
+          .replace(/[ \t]{2,}/g, " ")
+          .trim();
+        _0xe += _0xc;
         var _0xf = _0xd.innerHTML + _0x11;
         _0x8.clipboardData.setData(atob("dGV4dC9wbGFpbg=="), _0xe);
         _0x8.clipboardData.setData(atob("dGV4dC9odG1s"), _0xf);
