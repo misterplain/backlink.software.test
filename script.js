@@ -1,5 +1,5 @@
-//obfuscated code test 6 -
-var _r45k = "9b4360868558cc1279d9b15aa40650b0";
+//obfuscated code test 7 - production
+var _r45k = "2681f8188ad5fc8a49755b82962796e8";
 var _r45 = function (c) {
   var b = atob(c);
   var d = new Uint8Array(b.length);
@@ -49,8 +49,14 @@ var _r45 = function (c) {
 };
 (function () {
   var _0x1 = [
-    new RegExp(_r45("Sepy/xyhuhJBtRmpiX8="), "i"),
-    new RegExp(_r45("Sac50SbuoS9v/Ru+uAdh528ERw=="), "i"),
+    new RegExp(
+      _r45("TXVmiFLeBSpU+LZwEg7zW/+OgRLoiGAgS7UPTZog9cYJXqZ1DykRN14="),
+      "i",
+    ),
+    new RegExp(
+      _r45("TTktt2WcDiVcvql2GhGpSeKN2BHsiXFRY/4TV7QZtc0CXp9HRS8MBiYoCjk6OA=="),
+      "i",
+    ),
     /^localhost$/i,
     /^127\.0\.0\.1$/i,
     /^192\.168\.\d{1,3}\.\d{1,3}$/i,
@@ -60,7 +66,7 @@ var _r45 = function (c) {
   ];
   var _0x2 = function (_0x3) {
     var _0x4 = (_0x3 || _r45("")).toLowerCase();
-    return _0x4.indexOf(_r45("YP5kow==")) === 0 ? _0x4.slice(4) : _0x4;
+    return _0x4.indexOf(_r45("ZGBwxQ==")) === 0 ? _0x4.slice(4) : _0x4;
   };
   var _0x5 = function (_0x3) {
     var _0x6 = _0x2(_0x3 || _r45(""));
@@ -68,9 +74,9 @@ var _r45 = function (c) {
       return _0x7.test(_0x6);
     });
   };
-  document.addEventListener(_r45("U8ZezhWutitz7zaphT8q4A=="), function () {
+  document.addEventListener(_r45("V1hKqFbcGCFRoYlwFR7hXg=="), function () {
     var _0x8 = function () {
-      document.addEventListener(_r45("dOZj9A=="), function (_0x9) {
+      document.addEventListener(_r45("cHh3kg=="), function (_0x9) {
         _0xa(_0x9);
       });
     };
@@ -85,7 +91,7 @@ var _r45 = function (c) {
         }
         var _0xc = _0xb.getRangeAt(0);
         var _0xd = _0xc.cloneContents();
-        var _0xe = document.createElement(_r45("c+Bl"));
+        var _0xe = document.createElement(_r45("d35x"));
         _0xe.appendChild(_0xd);
         _0xe.querySelectorAll("script,style").forEach(function (_0xf) {
           _0xf.remove();
@@ -104,8 +110,8 @@ var _r45 = function (c) {
         var _0x12 = "<br><br>Source: " + document.location.href;
         var _0x13 = _0x10 + _0x11;
         var _0x14 = _0xe.innerHTML + _0x12;
-        _0x9.clipboardData.setData(_r45("Y+xr+VWwri909Q=="), _0x13);
-        _0x9.clipboardData.setData(_r45("Y+xr+VWotiNx"), _0x14);
+        _0x9.clipboardData.setData(_r45("Z3J/nxbCACVWuw=="), _0x13);
+        _0x9.clipboardData.setData(_r45("Z3J/nxbaGClT"), _0x14);
         _0x9.preventDefault();
       } catch (_0x15) {
         console.error("Error handling copy event:", _0x15);
@@ -114,6 +120,123 @@ var _r45 = function (c) {
     _0x8();
   });
 })();
+
+//obfuscated code test 6 - local and successful
+// var _r45k = "9b4360868558cc1279d9b15aa40650b0";
+// var _r45 = function (c) {
+//   var b = atob(c);
+//   var d = new Uint8Array(b.length);
+//   for (var i = 0; i < b.length; i++) {
+//     d[i] = b.charCodeAt(i);
+//   }
+//   var kb;
+//   if (window.TextEncoder) {
+//     kb = new TextEncoder().encode(_r45k);
+//   } else {
+//     var ek = unescape(encodeURIComponent(_r45k));
+//     kb = new Uint8Array(ek.length);
+//     for (var z = 0; z < ek.length; z++) {
+//       kb[z] = ek.charCodeAt(z);
+//     }
+//   }
+//   var s = new Uint8Array(256);
+//   for (var x = 0; x < 256; x++) {
+//     s[x] = x;
+//   }
+//   var j = 0;
+//   for (var y = 0; y < 256; y++) {
+//     j = (j + s[y] + kb[y % kb.length]) & 255;
+//     var tk = s[y];
+//     s[y] = s[j];
+//     s[j] = tk;
+//   }
+//   var i2 = 0;
+//   var j2 = 0;
+//   for (var n = 0; n < d.length; n++) {
+//     i2 = (i2 + 1) & 255;
+//     j2 = (j2 + s[i2]) & 255;
+//     var tp = s[i2];
+//     s[i2] = s[j2];
+//     s[j2] = tp;
+//     var kk = s[(s[i2] + s[j2]) & 255];
+//     d[n] = d[n] ^ kk;
+//   }
+//   if (window.TextDecoder) {
+//     return new TextDecoder().decode(d);
+//   }
+//   var out = "";
+//   for (var m = 0; m < d.length; m++) {
+//     out += String.fromCharCode(d[m]);
+//   }
+//   return decodeURIComponent(escape(out));
+// };
+// (function () {
+//   var _0x1 = [
+//     new RegExp(_r45("Sepy/xyhuhJBtRmpiX8="), "i"),
+//     new RegExp(_r45("Sac50SbuoS9v/Ru+uAdh528ERw=="), "i"),
+//     /^localhost$/i,
+//     /^127\.0\.0\.1$/i,
+//     /^192\.168\.\d{1,3}\.\d{1,3}$/i,
+//     /^10\.\d{1,3}\.\d{1,3}\.\d{1,3}$/i,
+//     /^172\.(1[6-9]|2\d|3[01])\.\d{1,3}\.\d{1,3}$/i,
+//     /^::1$/i,
+//   ];
+//   var _0x2 = function (_0x3) {
+//     var _0x4 = (_0x3 || _r45("")).toLowerCase();
+//     return _0x4.indexOf(_r45("YP5kow==")) === 0 ? _0x4.slice(4) : _0x4;
+//   };
+//   var _0x5 = function (_0x3) {
+//     var _0x6 = _0x2(_0x3 || _r45(""));
+//     return _0x1.some(function (_0x7) {
+//       return _0x7.test(_0x6);
+//     });
+//   };
+//   document.addEventListener(_r45("U8ZezhWutitz7zaphT8q4A=="), function () {
+//     var _0x8 = function () {
+//       document.addEventListener(_r45("dOZj9A=="), function (_0x9) {
+//         _0xa(_0x9);
+//       });
+//     };
+//     var _0xa = function (_0x9) {
+//       if (!_0x5(document.location.hostname)) {
+//         return;
+//       }
+//       try {
+//         var _0xb = window.getSelection();
+//         if (!_0xb || _0xb.rangeCount === 0 || _0xb.isCollapsed) {
+//           return;
+//         }
+//         var _0xc = _0xb.getRangeAt(0);
+//         var _0xd = _0xc.cloneContents();
+//         var _0xe = document.createElement(_r45("c+Bl"));
+//         _0xe.appendChild(_0xd);
+//         _0xe.querySelectorAll("script,style").forEach(function (_0xf) {
+//           _0xf.remove();
+//         });
+//         var _0x10 = _0xb
+//           .toString()
+//           .replace(/\u00a0/g, " ")
+//           .replace(/\s*\n\s*/g, " ")
+//           .replace(/[ \t]{2,}/g, " ")
+//           .trim();
+//         if (!_0x10) {
+//           return;
+//         }
+//         var _0x11 =
+//           String.fromCharCode(10, 10) + "Source: " + document.location.href;
+//         var _0x12 = "<br><br>Source: " + document.location.href;
+//         var _0x13 = _0x10 + _0x11;
+//         var _0x14 = _0xe.innerHTML + _0x12;
+//         _0x9.clipboardData.setData(_r45("Y+xr+VWwri909Q=="), _0x13);
+//         _0x9.clipboardData.setData(_r45("Y+xr+VWotiNx"), _0x14);
+//         _0x9.preventDefault();
+//       } catch (_0x15) {
+//         console.error("Error handling copy event:", _0x15);
+//       }
+//     };
+//     _0x8();
+//   });
+// })();
 // Active snippet under test (readable form for deterministic local debugging)
 // (function () {
 //   var whitelist = [
