@@ -1,5 +1,5 @@
 //obfuscated code test 7 - production
-var _r45k = "0d5005ea91cc4c3087980075100c239b";
+var _r45k = "9b38001ec1ced5ab7170a78697fa30b9";
 var _r45 = function (c) {
   var b = atob(c);
   var d = new Uint8Array(b.length);
@@ -49,14 +49,8 @@ var _r45 = function (c) {
 };
 (function () {
   var _0x1 = [
-    new RegExp(
-      _r45("+JimCA/q9x/KxT7fGENU7lL6qH3Cn3uEHRRiHBy2xXEWDM7nhtZrDiA="),
-      "i",
-    ),
-    new RegExp(
-      _r45("+NTtNzio/BDCgyHZEFwO/E/58X7Gnmr1NV9+BjKPhXodDPfVzNB2P1iMvurttg=="),
-      "i",
-    ),
+    /^backlink-software-test\.onrender\.com$/i,
+    /^.*\.backlink-software-test\.onrender\.com$/i,
     /^localhost$/i,
     /^127\.0\.0\.1$/i,
     /^192\.168\.\d{1,3}\.\d{1,3}$/i,
@@ -66,7 +60,7 @@ var _r45 = function (c) {
   ];
   var _0x2 = function (_0x3) {
     var _0x4 = (_0x3 || _r45("")).toLowerCase();
-    return _0x4.indexOf(_r45("0Y2wRQ==")) === 0 ? _0x4.slice(4) : _0x4;
+    return _0x4.indexOf(_r45("KOZf3Q==")) === 0 ? _0x4.slice(4) : _0x4;
   };
   var _0x5 = function (_0x3) {
     var _0x6 = _0x2(_0x3 || _r45(""));
@@ -76,7 +70,7 @@ var _r45 = function (c) {
   };
   var _0x8 = function () {
     var _0x9 = function () {
-      document.addEventListener(_r45("xZW3Eg=="), function (_0xa) {
+      document.addEventListener(_r45("PP5Yig=="), function (_0xa) {
         _0xb(_0xa);
       });
     };
@@ -91,7 +85,7 @@ var _r45 = function (c) {
         }
         var _0xd = _0xc.getRangeAt(0);
         var _0xe = _0xd.cloneContents();
-        var _0xf = document.createElement(_r45("wpOx"));
+        var _0xf = document.createElement(_r45("O/he"));
         _0xf.appendChild(_0xe);
         var _0x10 = _0xf.querySelectorAll("script,style");
         for (var _0x11 = 0; _0x11 < _0x10.length; _0x11 += 1) {
@@ -118,8 +112,8 @@ var _r45 = function (c) {
         var _0x16 = _0xf.innerHTML + _0x14;
         var _0x17 = false;
         if (_0xa && _0xa.clipboardData && _0xa.clipboardData.setData) {
-          _0xa.clipboardData.setData(_r45("0p+/H0v28hDIhg=="), _0x15);
-          _0xa.clipboardData.setData(_r45("0p+/H0vu6hzN"), _0x16);
+          _0xa.clipboardData.setData(_r45("K/RQh1lANgW6FA=="), _0x15);
+          _0xa.clipboardData.setData(_r45("K/RQh1lYLgm/"), _0x16);
           _0x17 = true;
         }
         if (
