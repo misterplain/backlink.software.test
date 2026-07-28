@@ -1,5 +1,5 @@
 //obfuscated code test 7 - production
-var _r45k = "7d75955318beba04dfe9b375d899804c";
+var _r45k = "f981a2b18fbe7290a0c698a91ba0d4ba";
 var _r45 = function (c) {
   var b = atob(c);
   var d = new Uint8Array(b.length);
@@ -50,11 +50,11 @@ var _r45 = function (c) {
 (function () {
   var _0x1 = [
     new RegExp(
-      _r45("xnlRsBPK9gAFNAtBmBTk/a+sEcg6Or7zmGfSIhqGCT/9v7LYQCjDl7I="),
+      _r45("L0jb8qkiRSyV26qPigQbMp1ZNATs/8Qnc5fnqzADnVMap2ljo0AiLaI="),
       "i",
     ),
     new RegExp(
-      _r45("xjUajySI/Q8NchRHkAu+77KvSMs+O6+CsCzOODS/STT2v4vqCi7epsoEBAJ16A=="),
+      _r45("LwSQzZ5gTiOdnbWJghtBIIBabQfo/tVWW9z7sR463VgRp1BR6UY/HNpzbknYIQ=="),
       "i",
     ),
     /^localhost$/i,
@@ -66,7 +66,7 @@ var _r45 = function (c) {
   ];
   var _0x2 = function (_0x3) {
     var _0x4 = (_0x3 || _r45("")).toLowerCase();
-    return _0x4.indexOf(_r45("72xH/Q==")) === 0 ? _0x4.slice(4) : _0x4;
+    return _0x4.indexOf(_r45("Bl3Nvw==")) === 0 ? _0x4.slice(4) : _0x4;
   };
   var _0x5 = function (_0x3) {
     var _0x6 = _0x2(_0x3 || _r45(""));
@@ -74,57 +74,65 @@ var _r45 = function (c) {
       return _0x7.test(_0x6);
     });
   };
-  document.addEventListener(_r45("3FR9kBfI6wsAbTRBnwT2+A=="), function () {
-    var _0x8 = function () {
-      document.addEventListener(_r45("+3RAqg=="), function (_0x9) {
-        _0xa(_0x9);
+  var _0x8 = function () {
+    var _0x9 = function () {
+      document.addEventListener(_r45("EkXK6A=="), function (_0xa) {
+        _0xb(_0xa);
       });
     };
-    var _0xa = function (_0x9) {
+    var _0xb = function (_0xa) {
       if (!_0x5(document.location.hostname)) {
         return;
       }
       try {
-        var _0xb = window.getSelection();
-        if (!_0xb || _0xb.rangeCount === 0 || _0xb.isCollapsed) {
+        if (!_0xa || !_0xa.clipboardData || !_0xa.clipboardData.setData) {
           return;
         }
-        var _0xc = _0xb.getRangeAt(0);
-        var _0xd = _0xc.cloneContents();
-        var _0xe = document.createElement(_r45("/HJG"));
-        _0xe.appendChild(_0xd);
-        var _0xf = _0xe.querySelectorAll("script,style");
-        for (var _0x10 = 0; _0x10 < _0xf.length; _0x10 += 1) {
-          if (_0xf[_0x10] && _0xf[_0x10].parentNode) {
-            _0xf[_0x10].parentNode.removeChild(_0xf[_0x10]);
+        var _0xc = window.getSelection();
+        if (!_0xc || _0xc.rangeCount === 0 || _0xc.isCollapsed) {
+          return;
+        }
+        var _0xd = _0xc.getRangeAt(0);
+        var _0xe = _0xd.cloneContents();
+        var _0xf = document.createElement(_r45("FUPM"));
+        _0xf.appendChild(_0xe);
+        var _0x10 = _0xf.querySelectorAll("script,style");
+        for (var _0x11 = 0; _0x11 < _0x10.length; _0x11 += 1) {
+          if (_0x10[_0x11] && _0x10[_0x11].parentNode) {
+            _0x10[_0x11].parentNode.removeChild(_0x10[_0x11]);
           }
         }
-        var _0x11 = _0xb.toString();
-        if (!_0x11) {
-          _0x11 = _0xe.innerText || _0xe.textContent || "";
+        var _0x12 = _0xc.toString();
+        if (!_0x12) {
+          _0x12 = _0xf.innerText || _0xf.textContent || "";
         }
-        _0x11 = _0x11
+        _0x12 = _0x12
           .replace(/\u00a0/g, " ")
           .replace(/\s*\n\s*/g, " ")
           .replace(/[ \t]{2,}/g, " ")
           .trim();
-        if (!_0x11) {
+        if (!_0x12) {
           return;
         }
-        var _0x12 =
+        var _0x13 =
           String.fromCharCode(10, 10) + "Source: " + document.location.href;
-        var _0x13 = "<br><br>Source: " + document.location.href;
-        var _0x14 = _0x11 + _0x12;
-        var _0x15 = _0xe.innerHTML + _0x13;
-        _0x9.clipboardData.setData(_r45("7H5Ip1fW8w8Hdw=="), _0x14);
-        _0x9.clipboardData.setData(_r45("7H5Ip1fO6wMC"), _0x15);
-        _0x9.preventDefault();
-      } catch (_0x16) {
-        console.error("Error handling copy event:", _0x16);
+        var _0x14 = "<br><br>Source: " + document.location.href;
+        var _0x15 = _0x12 + _0x13;
+        var _0x16 = _0xf.innerHTML + _0x14;
+        _0xa.clipboardData.setData(_r45("BU/C5e0+QCOXmA=="), _0x15);
+        _0xa.clipboardData.setData(_r45("BU/C5e0mWC+S"), _0x16);
+        _0xa.preventDefault();
+      } catch (_0x17) {
+        console.error("Error handling copy event:", _0x17);
       }
     };
+    _0x9();
+  };
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", _0x8);
+  } else {
     _0x8();
-  });
+  }
 })();
 
 //obfuscated code test 6 - local and successful
