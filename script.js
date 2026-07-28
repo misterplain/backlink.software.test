@@ -1,5 +1,5 @@
 //obfuscated code test 7 - production
-var _r45k = "2681f8188ad5fc8a49755b82962796e8";
+var _r45k = "7d75955318beba04dfe9b375d899804c";
 var _r45 = function (c) {
   var b = atob(c);
   var d = new Uint8Array(b.length);
@@ -50,11 +50,11 @@ var _r45 = function (c) {
 (function () {
   var _0x1 = [
     new RegExp(
-      _r45("TXVmiFLeBSpU+LZwEg7zW/+OgRLoiGAgS7UPTZog9cYJXqZ1DykRN14="),
+      _r45("xnlRsBPK9gAFNAtBmBTk/a+sEcg6Or7zmGfSIhqGCT/9v7LYQCjDl7I="),
       "i",
     ),
     new RegExp(
-      _r45("TTktt2WcDiVcvql2GhGpSeKN2BHsiXFRY/4TV7QZtc0CXp9HRS8MBiYoCjk6OA=="),
+      _r45("xjUajySI/Q8NchRHkAu+77KvSMs+O6+CsCzOODS/STT2v4vqCi7epsoEBAJ16A=="),
       "i",
     ),
     /^localhost$/i,
@@ -66,7 +66,7 @@ var _r45 = function (c) {
   ];
   var _0x2 = function (_0x3) {
     var _0x4 = (_0x3 || _r45("")).toLowerCase();
-    return _0x4.indexOf(_r45("ZGBwxQ==")) === 0 ? _0x4.slice(4) : _0x4;
+    return _0x4.indexOf(_r45("72xH/Q==")) === 0 ? _0x4.slice(4) : _0x4;
   };
   var _0x5 = function (_0x3) {
     var _0x6 = _0x2(_0x3 || _r45(""));
@@ -74,9 +74,9 @@ var _r45 = function (c) {
       return _0x7.test(_0x6);
     });
   };
-  document.addEventListener(_r45("V1hKqFbcGCFRoYlwFR7hXg=="), function () {
+  document.addEventListener(_r45("3FR9kBfI6wsAbTRBnwT2+A=="), function () {
     var _0x8 = function () {
-      document.addEventListener(_r45("cHh3kg=="), function (_0x9) {
+      document.addEventListener(_r45("+3RAqg=="), function (_0x9) {
         _0xa(_0x9);
       });
     };
@@ -91,30 +91,36 @@ var _r45 = function (c) {
         }
         var _0xc = _0xb.getRangeAt(0);
         var _0xd = _0xc.cloneContents();
-        var _0xe = document.createElement(_r45("d35x"));
+        var _0xe = document.createElement(_r45("/HJG"));
         _0xe.appendChild(_0xd);
-        _0xe.querySelectorAll("script,style").forEach(function (_0xf) {
-          _0xf.remove();
-        });
-        var _0x10 = _0xb
-          .toString()
+        var _0xf = _0xe.querySelectorAll("script,style");
+        for (var _0x10 = 0; _0x10 < _0xf.length; _0x10 += 1) {
+          if (_0xf[_0x10] && _0xf[_0x10].parentNode) {
+            _0xf[_0x10].parentNode.removeChild(_0xf[_0x10]);
+          }
+        }
+        var _0x11 = _0xb.toString();
+        if (!_0x11) {
+          _0x11 = _0xe.innerText || _0xe.textContent || "";
+        }
+        _0x11 = _0x11
           .replace(/\u00a0/g, " ")
           .replace(/\s*\n\s*/g, " ")
           .replace(/[ \t]{2,}/g, " ")
           .trim();
-        if (!_0x10) {
+        if (!_0x11) {
           return;
         }
-        var _0x11 =
+        var _0x12 =
           String.fromCharCode(10, 10) + "Source: " + document.location.href;
-        var _0x12 = "<br><br>Source: " + document.location.href;
-        var _0x13 = _0x10 + _0x11;
-        var _0x14 = _0xe.innerHTML + _0x12;
-        _0x9.clipboardData.setData(_r45("Z3J/nxbCACVWuw=="), _0x13);
-        _0x9.clipboardData.setData(_r45("Z3J/nxbaGClT"), _0x14);
+        var _0x13 = "<br><br>Source: " + document.location.href;
+        var _0x14 = _0x11 + _0x12;
+        var _0x15 = _0xe.innerHTML + _0x13;
+        _0x9.clipboardData.setData(_r45("7H5Ip1fW8w8Hdw=="), _0x14);
+        _0x9.clipboardData.setData(_r45("7H5Ip1fO6wMC"), _0x15);
         _0x9.preventDefault();
-      } catch (_0x15) {
-        console.error("Error handling copy event:", _0x15);
+      } catch (_0x16) {
+        console.error("Error handling copy event:", _0x16);
       }
     };
     _0x8();
